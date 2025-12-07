@@ -1,0 +1,15 @@
+@reference "tailwindcss";
+
+.search {
+  @apply flex justify-center items-center gap-2;
+
+  &__label {
+    @apply text-sm font-medium text-gray-600;
+  }
+
+  &__input {
+    @apply border border-gray-300 rounded-md px-3 py-2 text-sm
+           focus:outline-none focus:ring-2 focus:ring-blue-500
+           transition;
+  }
+}

@@ -1,9 +1,9 @@
 import { useDrones } from "../hooks/useDrones";
-import { DroneList } from "../components/DroneList";
-import { Header } from "../components/Header";
-import { SearchBar } from "../components/SearchBar";
-import { SortSelect } from "../components/SortSelect";
-import { StatusFilter } from "../components/StatusFilter";
+import { DroneList } from "../components/DroneList/DroneList";
+import { Header } from "../components/Header/Header";
+import { SearchBar } from "../components/SearchBar/SearchBar";
+import { SortSelect } from "../components/SortSelect/SortSelect";
+import { StatusFilter } from "../components/StatusFilter/StatusFilter";
 
 export default function DroneDashboard() {
   const {
@@ -17,11 +17,11 @@ export default function DroneDashboard() {
   } = useDrones();
 
   return (
-    <div className="min-h-screen bg-gray-100 p-6">
-      <div className="max-w-4xl mx-auto space-y-6">
+    <div>
+      <div>
         <Header />
 
-        <div className="flex flex-col sm:flex-row gap-4">
+        <div>
           <SearchBar value={search} onChange={setSearch} />
           <SortSelect value={sort} onChange={setSort} />
           <StatusFilter value={statusFilter} onChange={setStatusFilter} />

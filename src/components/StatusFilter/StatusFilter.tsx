@@ -1,4 +1,4 @@
-import type { StatusFilter as StatusFilterType } from "../types/Drone";
+import type { StatusFilter as StatusFilterType } from "../../types/Drone";
 
 interface Props {
   value: StatusFilterType;

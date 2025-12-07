@@ -1,4 +1,4 @@
-import type { Drone } from "../types/Drone";
+import type { Drone } from "../../types/Drone";
 
 interface Props {
   drones: Drone[];
